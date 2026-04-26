@@ -62,7 +62,7 @@ The main hardware components are:
 
 | Component | Model / description |
 | --- | --- |
-| Motor driver | BD10LR BLDC |
+| Motor driver | [BD10LR BLDC](<BLD-120A updated(BD10LR).pdf>) |
 | Motor under test (MUT) | STEPPEROLINE BLDC Motor 57BYA54-24-01 |
 | Load | Hysteresis Brake AHB-05M |
 | Vibration sensors | ADXL355, mounted on the front and rear bearing mount rings |
