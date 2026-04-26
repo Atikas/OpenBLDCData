@@ -10,6 +10,11 @@ measured with two ADXL355 accelerometers mounted on the front and rear bearing
 mount rings, and electrical measurements are recorded with an INA226 current
 sensor placed before the BLDC motor driver.
 
+The measurements were collected using a Raspberry Pi Pico 2 at a nominal
+sampling rate of 1 kHz. Small sampling-time jitter is present in the recordings,
+so timing-sensitive analysis should use the recorded timestamp columns rather
+than assuming a perfectly uniform sampling interval.
+
 ![Test bench](images/test-bench.jpg)
 
 The dataset includes a baseline recording, `analize_0rpm_0mA_bat.csv`, captured
@@ -55,7 +60,7 @@ Each CSV file uses the following columns:
 | `curr_raw` | Raw INA226 current reading from the current sensor placed before the BLDC motor driver. |
 | `pg_rpm` | Pulse signal from the motor driver. Six pulses correspond to one full mechanical revolution. |
 | `seq` | Sample sequence counter. |
-| `dt` | Time difference between samples. |
+| `dt` | Time difference between samples; use this together with `t_us` to account for the small sampling-time jitter. |
 
 ## License
 
