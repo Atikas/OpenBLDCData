@@ -3,7 +3,7 @@
 ## Introduction
 
 This repository contains time-series measurements collected from a BLDC motor
-test bench for vibration and current analysis. The motor under test is a
+test bench for vibration and current analysis. The motor under test (MUT) is a
 STEPPEROLINE BLDC Motor 57BYA54-24-01 driven by a BD10LR BLDC motor driver.
 Mechanical load is applied using an AHB-05M hysteresis brake. Vibration is
 measured with two ADXL355 accelerometers mounted on the front and rear bearing
@@ -22,9 +22,25 @@ with the test bench switched off. This file represents the background sensor
 noise of the measurement chain without motor rotation or load current.
 
 The final suffix in each file name identifies the motor power source. Files
-ending in `bat` were recorded with the motor powered from a lead-acid battery.
-Files ending in `mait` were recorded with the motor powered from a UNIT-T
-UTP3305 laboratory power supply.
+ending in `bat` were recorded with the motor powered from two NP-12-1.2Ah
+lead-acid batteries connected in series. Files ending in `mait` were recorded
+with the motor powered from a UNIT-T UTP3305 laboratory power supply.
+
+File names containing `ENV` indicate recordings contaminated by environmental
+disturbances. These disturbances may include footsteps, wind, nearby transport,
+and structural vibrations transmitted through the surroundings.
+
+The MUT operating-speed regimes represented in the dataset are 500, 1000, 1500,
+and 2000 rpm.
+
+The dataset covers four MUT health states:
+
+| State | Status | Description |
+| --- | --- | --- |
+| Healthy | Done | Reference operating condition without an intentionally introduced fault. |
+| Front bearing fault | WIP | Fault condition associated with the front bearing. |
+| Rear bearing fault | WIP | Fault condition associated with the rear bearing. |
+| Shaft misalignment | WIP | Fault condition associated with shaft misalignment. |
 
 The current value in each file name corresponds to the approximate motor load:
 
@@ -41,10 +57,12 @@ The main hardware components are:
 | Component | Model / description |
 | --- | --- |
 | Motor driver | BD10LR BLDC |
-| Motor under test | STEPPEROLINE BLDC Motor 57BYA54-24-01 |
+| Motor under test (MUT) | STEPPEROLINE BLDC Motor 57BYA54-24-01 |
 | Load | Hysteresis Brake AHB-05M |
 | Vibration sensors | ADXL355, mounted on the front and rear bearing mount rings |
 | Current sensors | INA226 |
+| Battery supply | NP-12-1.2Ah lead-acid battery, 2x in series |
+| Laboratory power supply | UNIT-T UTP3305 |
 
 ## CSV Columns
 
