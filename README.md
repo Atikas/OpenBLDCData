@@ -1,4 +1,4 @@
-# Open DATA
+# Open BLDC Motor Test-Bench Dataset for Vibration and Current Analysis
 
 ## Experimental Setup
 
@@ -11,6 +11,22 @@
 | Current sensors | INA226 |
 
 ![Test bench](images/test-bench.jpg)
+
+## CSV Columns
+
+Each CSV file uses the following columns:
+
+| Column | Description |
+| --- | --- |
+| `t_us` | Sample timestamp in microseconds. |
+| `ax`, `ay`, `az` | ADXL355 vibration sensor axes measured on the front bearing ring, bearing type 608ZZ 8x22x7. |
+| `ax1`, `ay1`, `az1` | ADXL355 vibration sensor axes measured on the rear bearing ring, bearing type 606ZZ 6x17x6. |
+| `shunt_raw` | Raw INA226 shunt-voltage reading from the current sensor placed before the BLDC motor driver. |
+| `bus_raw` | Raw INA226 bus-voltage reading from the current sensor placed before the BLDC motor driver. |
+| `curr_raw` | Raw INA226 current reading from the current sensor placed before the BLDC motor driver. |
+| `pg_rpm` | Pulse signal from the motor driver. Six pulses correspond to one full mechanical revolution. |
+| `seq` | Sample sequence counter. |
+| `dt` | Time difference between samples. |
 
 ## Motor Load
 
@@ -35,7 +51,7 @@ credit to the author.
 
 Recommended citation:
 
-> Robertas Uselis. Open DATA. 2026. https://github.com/Atikas/OpenData.
+> Robertas Uselis. Open BLDC Motor Test-Bench Dataset for Vibration and Current Analysis. 2026. https://github.com/Atikas/OpenData.
 > License: CC BY 4.0.
 
 If you modify the data, indicate that changes were made.
