@@ -17,7 +17,7 @@ than assuming a perfectly uniform sampling interval.
 
 ![Test bench](images/test-bench.jpg)
 
-The dataset includes a baseline recording, `analize_0rpm_0mA_bat.csv`, captured
+The dataset includes a baseline recording, `analize_0rpm_0mA.csv`, captured
 with the test bench switched off. This file represents the background sensor
 noise of the measurement chain without motor rotation or load current.
 
