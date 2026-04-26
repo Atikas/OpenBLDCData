@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Open DATA"
+authors:
+  - family-names: "Ūselis"
+    given-names: "Robertas"
+year: 2026
+url: "https://github.com/Atikas/OpenData"
+license: "CC-BY-4.0"
