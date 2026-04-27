@@ -175,7 +175,20 @@ credit to the author.
 
 Recommended citation:
 
-> Robertas Ūselis. Open BLDC Motor Test-Bench Dataset for Vibration and Current Analysis. 2026. https://github.com/Atikas/OpenData.
+> Robertas Ūselis. Open BLDC Motor Test-Bench Dataset for Vibration and Current Analysis. 2026. https://github.com/Atikas/OpenBLDCData.
 > License: CC BY 4.0.
 
 If you modify the data, indicate that changes were made.
+
+## FAIR Principles
+
+This dataset is designed to align with the [FAIR data principles](https://www.go-fair.org/fair-principles/) (Findable, Accessible, Interoperable, Reusable):
+
+| Principle | How it is addressed |
+| --- | --- |
+| **Findable** | The dataset is publicly hosted on GitHub at https://github.com/Atikas/OpenBLDCData. File names encode experimental conditions, making individual recordings easy to identify without opening the files. |
+| **Accessible** | All data files are openly available without authentication. The repository can be cloned or individual files downloaded directly via standard HTTPS. |
+| **Interoperable** | Data is stored in plain CSV format with clearly named columns and explicit timestamp information. No proprietary software or format is required to read the files. |
+| **Reusable** | Each file is accompanied by a documented measurement setup, hardware description, column definitions, and operating conditions in this README. The dataset is released under CC BY 4.0, which permits broad reuse with attribution. |
+
+> **Note:** A persistent identifier (DOI) has not yet been assigned. For long-term citability and formal publication, archiving the dataset on a repository such as [Zenodo](https://zenodo.org) is recommended.
