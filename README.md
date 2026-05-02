@@ -118,7 +118,7 @@ The number `<id>` immediately following the `<state>` label encodes both the
 motor unit and the experiment number.
 The first digit(s) indicate the motor unit, and the last digit indicates the
 experiment number with same conditions. For example, `10` means motor 2, 
-experiment 1; `25` means motor 3, experiment 5. 
+experiment 1; `25` means motor 3, experiment 6. 
 
 The `<speed>rpm` field indicates the approximate MUT speed setpoint. The
 operating-speed regimes represented in the dataset are 500, 1000, 1500, 2000,
