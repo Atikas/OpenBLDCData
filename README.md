@@ -104,10 +104,8 @@ Example:
 analize_healthy16_ENV_1000rpm_64mA_bat.csv
 ```
 
-The `<state>` field identifies the MUT health state. The number immediately
-following the state label, for example `10`, `15`, or `16` in `healthy10`, does
-not encode an experimental condition; it is only an internal recording
-identifier. The dataset covers four MUT health states:
+The `<state>` field identifies the MUT health state. The dataset covers four 
+MUT health states:
 
 | State | Status | Description |
 | --- | --- | --- |
@@ -115,6 +113,12 @@ identifier. The dataset covers four MUT health states:
 | Front bearing fault | WIP | Fault condition associated with the front bearing. |
 | Rear bearing fault | WIP | Fault condition associated with the rear bearing. |
 | Shaft misalignment | WIP | Fault condition associated with shaft misalignment. |
+
+The number `<id>` immediately following the `<state>` label encodes both the 
+motor unit and the experiment number.
+The first digit(s) indicate the motor unit, and the last digit indicates the
+experiment number with same conditions. For example, `10` means motor 2, 
+experiment 1; `25` means motor 3, experiment 5. 
 
 The `<speed>rpm` field indicates the approximate MUT speed setpoint. The
 operating-speed regimes represented in the dataset are 500, 1000, 1500, 2000,
