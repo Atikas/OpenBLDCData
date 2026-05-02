@@ -160,7 +160,7 @@ Each CSV file uses the following columns:
 | `shunt_raw` | Raw INA226 shunt-voltage reading from the current sensor placed before the BLDC motor driver. |
 | `bus_raw` | Raw INA226 bus-voltage reading from the current sensor placed before the BLDC motor driver. |
 | `curr_raw` | Raw INA226 current reading from the current sensor placed before the BLDC motor driver. |
-| `pg_rpm` | Pulse signal from the motor driver. Six pulses correspond to one full mechanical revolution. |
+| `pg_rpm` | Square-wave pulse signal from the motor driver. Logic levels: 0/1. Six pulses correspond to one full mechanical revolution. |
 | `seq` | Sample sequence counter. |
 | `dt` | Time difference between samples; use this together with `t_us` to account for the small sampling-time jitter. |
 
