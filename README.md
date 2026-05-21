@@ -56,6 +56,15 @@ than assuming a perfectly uniform sampling interval.
 
 ![Test bench](images/test-bench.jpg)
 
+### 3D-Printed Construction Parts
+
+The `3d_prints/` directory contains STL files for the printed mechanical parts
+used in the test bench construction. These models are provided to make the
+apparatus layout more transparent and to support reproduction or adaptation of
+the measurement setup. These files describe the physical construction elements of the apparatus only;
+they should be used together with the hardware description and the test-bench
+image in this README when reproducing the setup.
+
 ### Hardware Components
 
 The main hardware components are:
