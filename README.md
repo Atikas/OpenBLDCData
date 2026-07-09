@@ -97,6 +97,24 @@ parameters:
 | Resistance per phase | 1.02 +/- 10% Ohms |
 | Inductance per phase | 2.61 +/- 20% mH |
 
+### Faults evaluated 
+
+#### Front bearing fault
+
+608ZZ ball
+
+#### Rear bearing fault
+
+606ZZ ball
+
+#### Shaft misalignment
+
+The shaft misalignment fault was introduced by setting a 2.5 deg angular
+offset between the motor shaft and the coupled load shaft. 
+
+![Shaft misalignment](images/misalignment.jpg)
+
+
 ### Data Files
 
 CSV files are stored in the `data/` directory.
