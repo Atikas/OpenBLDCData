@@ -109,7 +109,7 @@ parameters:
 
 #### Shaft misalignment
 
-The shaft misalignment fault was introduced by setting a 2.5 deg angular
+The shaft misalignment fault was introduced by setting a 2.5° angular
 offset between the motor shaft and the coupled load shaft. 
 
 ![Shaft misalignment](images/misalignment.jpg)
