@@ -69,12 +69,11 @@ optimized for current measurement are WIP.
 
 ### 3D-Printed Construction Parts
 
-The `3d_prints/` directory contains STL files for the printed mechanical parts
-used in the test bench construction. These models are provided to make the
-apparatus layout more transparent and to support reproduction or adaptation of
-the measurement setup. These files describe the physical construction elements of the apparatus only;
-they should be used together with the hardware description and the test-bench
-image in this README when reproducing the setup.
+The `3d_prints/` directory contains the STL files used to 3D print the test-bench
+mounts and other mechanical parts. The files can be used to reproduce or modify
+the mechanical setup shown in the test-bench image above and should be used with
+the hardware components listed below. The parts in the current test bench were
+printed from PLA.
 
 ### Hardware Components
 
