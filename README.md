@@ -56,6 +56,17 @@ than assuming a perfectly uniform sampling interval.
 
 ![Test bench](images/test-bench.jpg)
 
+### RP2350 Acquisition-Device Current Measurement
+
+The RP2350 acquisition device was powered from a laptop USB port, and its
+current was measured with a UM34C USB power meter. The measured current was
+approximately 0.034 A during this test. This value should be treated as
+indicative rather than fully representative because the microcontroller LCD was
+enabled during the measurement. Measurements with the LCD disabled and firmware
+optimized for current measurement are WIP.
+
+![RP2350 current measurement with UM34C](images/UM34C.jpg)
+
 ### 3D-Printed Construction Parts
 
 The `3d_prints/` directory contains STL files for the printed mechanical parts
