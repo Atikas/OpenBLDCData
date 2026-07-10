@@ -150,17 +150,23 @@ MUT health states:
 | Front bearing fault | WIP | - | Fault condition associated with the front bearing. |
 | Rear bearing fault | WIP | - | Fault condition associated with the rear bearing. |
 | Shaft misalignment | WIP | - | Fault condition associated with shaft misalignment. |
+| Demagnetisation | WIP | - | Fault condition associated with weakened motor magnets. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
 motor unit and the experiment number.
 The first digit(s) indicate the motor unit, and the last digit indicates the
 experiment number with same conditions. For example, `10` means motor 2, 
-experiment 1; `25` means motor 3, experiment 6. 
+experiment 1; `25` means motor 3, experiment 6. Motor index `0` is reserved
+exclusively for demagnetisation experiments and is not used for any other
+state.
 
 The `<speed>rpm` field indicates the approximate MUT speed setpoint. The
 operating-speed regimes represented in the dataset are 500, 1000, 1500, 2000,
-and 2500 rpm. The exact rotational speed can be calculated from the `pg_rpm`
-pulse signal, where six pulses correspond to one full mechanical revolution.
+2500, and 3000 rpm. Data at 2000, 2500, and 3000 rpm are limited to recordings
+at 75% or 100% motor load. The exact rotational speed can be calculated from the
+`pg_rpm` pulse signal, where six pulses correspond to one full mechanical
+revolution. A Python example of this calculation is provided in
+[`examples/RPM_calculation.ipynb`](examples/RPM_calculation.ipynb).
 
 The `<load-current>mA` field indicates the current setting used to define the
 approximate mechanical load. The mapping is given below.
