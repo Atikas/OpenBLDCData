@@ -146,11 +146,11 @@ MUT health states:
 
 | State | Status | Data descriptors | Description |
 | --- | --- | --- | --- |
-| Healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
-| Front bearing fault | WIP | - | Fault condition associated with the front bearing. |
-| Rear bearing fault | WIP | - | Fault condition associated with the rear bearing. |
-| Shaft misalignment | WIP | - | Fault condition associated with shaft misalignment. |
-| Demagnetisation | WIP | - | Fault condition associated with weakened motor magnets. |
+| healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
+| front_ball | WIP | - | Fault condition associated with the front bearing. |
+| rear_ball | WIP | - | Fault condition associated with the rear bearing. |
+| misalignment | WIP | - | Fault condition associated with shaft misalignment. |
+| demag | WIP | - | Fault condition associated with weakened motor magnets. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
 motor unit and the experiment number.
