@@ -145,12 +145,12 @@ analize_healthy16_ENV_1000rpm_64mA_bat.csv
 The `<state>` field identifies the MUT health state. The dataset covers four 
 MUT health states:
 
-| State | Status | Description |
-| --- | --- | --- |
-| Healthy | Done | Reference operating condition without the faults. |
-| Front bearing fault | WIP | Fault condition associated with the front bearing. |
-| Rear bearing fault | WIP | Fault condition associated with the rear bearing. |
-| Shaft misalignment | WIP | Fault condition associated with shaft misalignment. |
+| State | Status | Data descriptors | Description |
+| --- | --- | --- | --- |
+| Healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
+| Front bearing fault | WIP | - | Fault condition associated with the front bearing. |
+| Rear bearing fault | WIP | - | Fault condition associated with the rear bearing. |
+| Shaft misalignment | WIP | - | Fault condition associated with shaft misalignment. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
 motor unit and the experiment number.
