@@ -32,12 +32,16 @@ and environmentally contaminated `ENV` recordings makes the dataset useful for
 studying not only clean fault signatures, but also the measurement artifacts and
 disturbances that appear in practical deployments.
 
-The dataset is also designed to be readable and reusable. The CSV files contain
-raw time-series channels with explicit timestamp information, the file names
-encode the main experimental conditions, and the measurement setup is described
-directly in this README. This makes the data suitable for exploratory analysis,
-benchmarking, teaching, and as a starting point for building reproducible BLDC
-motor diagnostics workflows.
+Potential uses of the dataset include:
+
+- Multimodal fault diagnosis using vibration, current, and rotational-speed data.
+- Anomaly detection and self-supervised representation learning with limited labels.
+- Domain adaptation across motor units, speeds, loads, power sources, and environmental conditions.
+- Calibration and validation of physics-based models and digital twins.
+- Signal reconstruction, denoising, missing-sample recovery, and sampling-jitter compensation.
+- Virtual sensing of speed, load, or machine condition from a reduced set of measured channels.
+- Development of edge condition-monitoring methods for resource-constrained acquisition hardware.
+- Reproducible laboratory exercises in signal processing, machine diagnostics, and condition monitoring.
 
 ### Measurement Setup
 
@@ -148,7 +152,7 @@ MUT health states:
 | healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
 | front_ball | WIP | - | Fault condition associated with the front bearing. |
 | rear_ball | WIP | - | Fault condition associated with the rear bearing. |
-| misalignment | WIP | - | Fault condition associated with shaft misalignment. |
+| misalignment | Done | 45 CSV files; 0.40 GB total (uncompressed) | Fault condition associated with shaft misalignment. |
 | demag | WIP | - | Fault condition associated with weakened motor magnets. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
@@ -241,3 +245,17 @@ This dataset is designed to align with the [FAIR data principles](https://www.go
 | **Reusable** | Each file is accompanied by a documented measurement setup, hardware description, column definitions, and operating conditions in this README. The dataset is released under CC BY 4.0, which permits broad reuse with attribution. |
 
 > **Note:** A persistent identifier (DOI) has not yet been assigned. For long-term citability and formal publication, archiving the dataset on a repository such as [Zenodo](https://zenodo.org) is recommended.
+
+## Collaboration
+
+If your research requires operating conditions or measurements that are not
+currently included in the dataset, please open a GitHub issue describing the
+data you need. I am open to collaboration and may be able to collect additional
+measurements using this test bench.
+
+<!-- ## Support
+
+If you find this dataset useful, you can support my work through
+[Buy Me a Coffee](https://buymeacoffee.com/atikas).
+
+[![Buy Me a Coffee QR code](images/buymeacoffe-code.png)](https://buymeacoffee.com/atikas) -->
