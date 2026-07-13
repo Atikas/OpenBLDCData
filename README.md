@@ -135,7 +135,7 @@ CSV files are stored in the `data/` directory.
 Most file names follow this structure:
 
 ```text
-analize_<state><id>[_ENV]_<speed>rpm_<load-current>mA_<power-source>.csv
+analize_<state><id>[_quality]_<speed>rpm_<load-current>mA_<power-source>.csv
 ```
 
 Example:
@@ -152,7 +152,7 @@ MUT health states:
 | healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
 | front_ball | WIP | - | Fault condition associated with the front bearing. |
 | rear_ball | WIP | - | Fault condition associated with the rear bearing. |
-| misalignment | Done | 45 CSV files; 0.40 GB total (uncompressed) | Fault condition associated with shaft misalignment. |
+| misalignment | Done | 65 CSV files; 0.54 GB total (uncompressed) | Fault condition associated with shaft misalignment. |
 | demag | WIP | - | Fault condition associated with weakened motor magnets. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
@@ -193,9 +193,18 @@ The `<power-source>` suffix identifies the motor power source:
 | `bat` | Two NP-12-1.2Ah lead-acid batteries connected in series. |
 | `mait` | UNIT-T UTP3305 laboratory power supply. |
 
-File names containing `ENV` indicate recordings contaminated by environmental
-disturbances. These disturbances may include footsteps, wind, nearby transport,
-and structural vibrations transmitted through the surroundings.
+## Optional Quality Parameter
+
+The `[_quality]` part of the file-name structure is an optional parameter that
+describes signal quality. 
+
+| `<quality>` value | Meaning | Description |
+| --- | --- | --- |
+| `ENV` | Environmental contamination | The recording contains environmental disturbances, such as footsteps, wind, nearby transport, or structural vibrations transmitted through the surroundings. |
+| `SF` | Sensor failure or drift | The recording is affected by a sensor failure or sensor drift. |
+| No label | Clean signal | No significant environmental contamination, sensor failure, or sensor drift was identified in the recording. |
+
+## Baseline
 
 The dataset also includes a baseline recording, `data/analize_0rpm_0mA.csv`,
 captured with the test bench switched off. This file represents the background
