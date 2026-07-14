@@ -149,10 +149,10 @@ MUT health states:
 
 | State | Status | Data descriptors | Description |
 | --- | --- | --- | --- |
-| healthy | Done | 71 CSV files; 1.82 GB total (uncompressed) | Reference operating condition without the faults. |
-| front_ball | WIP | - | Fault condition associated with the front bearing. |
-| rear_ball | WIP | - | Fault condition associated with the rear bearing. |
-| misalignment | Done | 65 CSV files; 0.54 GB total (uncompressed) | Fault condition associated with shaft misalignment. |
+| healthy | 100% | 69 CSV files; 63/63 expected laboratory-power combinations | Reference operating condition without the faults. |
+| front_ball | 100% | 63 CSV files; 63/63 expected laboratory-power combinations | Fault condition associated with the front bearing. |
+| rear_ball | 100% | 63 CSV files; 63/63 expected laboratory-power combinations | Fault condition associated with the rear bearing. |
+| misalignment | 100% | 63 CSV files; 63/63 expected laboratory-power combinations | Fault condition associated with shaft misalignment. |
 | demag | WIP | - | Fault condition associated with weakened motor magnets. |
 
 The number `<id>` immediately following the `<state>` label encodes both the 
