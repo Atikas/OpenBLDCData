@@ -155,14 +155,23 @@ parameters:
 | Resistance per phase | 1.02 +/- 10% Ohms |
 | Inductance per phase | 2.61 +/- 20% mH |
 
+### Faults
 
 #### Front bearing fault
 
-608ZZ ball
+The front bearing is a 608ZZ (8 × 22 × 7 mm) deep-groove ball bearing. A rolling-element fault was introduced by grinding the surface of one of the seven 3.969 mm balls. This produces repeated impacts at twice the ball-spin frequency (2 × BSF). Fault validation is documented in [`src/bearing_fault_validation.ipynb`](src/bearing_fault_validation.ipynb).
+
+![Front bearing 608ZZ — ball defect](images/bearing_front_ball.jpg)
+
+An outer-race fault condition is also being prepared (WIP).
+
+![Front bearing 608ZZ — outer race](images/bearing_front_outher.jpg)
 
 #### Rear bearing fault
 
-606ZZ ball
+The rear bearing is a 606ZZ (6 × 17 × 6 mm) deep-groove ball bearing. A rolling-element fault was introduced by grinding the surface of one of the balls.
+
+![Rear bearing 606ZZ — ball defect](images/bearing_rear_ball.jpg)
 
 #### Shaft misalignment
 
